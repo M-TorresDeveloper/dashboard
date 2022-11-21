@@ -8,7 +8,7 @@ const socket = io("http://localhost:8080", {
   reconnection: false,
 });
 
-const TIME_TO_REFRESH = 2000;
+const TIME_TO_REFRESH = 10000;
 interface IReceivedValues {
   time: Date;
   values: {

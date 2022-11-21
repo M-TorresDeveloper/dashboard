@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding:0;
+}
+header{
+  padding:10px;
+}
+header label{
+  margin-left: 10px;
+  font-weight: bold;
+}
+.btn{
+  height:40px;
+  border-width: 0;
+  border-radius: 5px;
+  color:#fff;
+  margin-left: 10px;
+}
+.btn:hover{
+  cursor: pointer;
+}
+.btn-success{
+  background-color: rgb(24, 151, 85);
+}
+.btn-danger{
+  background-color: rgb(157, 5, 5);
+}
+.container{
+  background-color: rgb(234, 243, 251);
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.column{
+  flex:1;
+}
+.card{
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #fff;
+  height:380px;
+  margin:10px 10px;
+  border-radius: 10px;
+  width: calc(100%-20px);
+}
+.card div{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.spinner{
+  align-self: center;
+  margin-bottom: 10px;
+}
+.card div label{
+  align-self: center;
+}
+
+@media screen AND (min-width:320px) AND (max-width:767px) {
+  .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .card{
+    width: calc(100%-20px);
+  }
+}
+@media screen AND (min-width:768) {
+  .row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .column{
+    flex:1;
+  }
+  .card{
+    justify-content: center;
+    align-self: center;
+    background-color: #fff;
+    height:380px;
+    margin:10px 10px;
+    border-radius: 10px;
+    width: calc(100%-20px);
+  }
+}
